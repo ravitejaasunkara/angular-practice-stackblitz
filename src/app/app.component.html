@@ -8,3 +8,21 @@
 <ng-template #elseblock>
   <p>else block</p>
 </ng-template>
+
+<ng-container *ngIf="isLoggedin; then login; else logout"> </ng-container>
+
+<ng-template #login>
+  <p>Welcome my friend</p>
+</ng-template>
+
+<ng-template #logout>
+  <p>please login my friend</p>
+</ng-template>
+
+<div [hidden]="!data">example of [hide]</div>
+
+<ng-template [ngIf]="data">
+  <div>
+    <p>ngif using square brackets</p>
+  </div>
+</ng-template>
