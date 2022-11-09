@@ -1,0 +1,10 @@
+<hello name="{{ name }}"></hello>
+<p>Start editing to see some magic happen :)</p>
+
+<div *ngIf="data; else elseblock">
+  <p>If block</p>
+</div>
+
+<ng-template #elseblock>
+  <p>else block</p>
+</ng-template>
