@@ -26,3 +26,13 @@
     <p>ngif using square brackets</p>
   </div>
 </ng-template>
+
+<input type="text" [(ngModel)]='inpbox'>
+
+<!-- <p>{{inpbox}}</p> -->
+
+<div [ngSwitch]='inpbox'>
+  <p *ngSwitchCase='"Ravi"'>Ravi</p>
+  <p *ngSwitchCase='"Pradeep"'>Pradeep</p>
+  <p *ngSwitchDefault>Raju</p>
+</div>

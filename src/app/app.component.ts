@@ -9,4 +9,5 @@ export class AppComponent  {
   name = 'Angular';
   data = true;
   isLoggedin = true;
+  inpbox = '';
 }
