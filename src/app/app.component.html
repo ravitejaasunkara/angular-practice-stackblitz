@@ -27,14 +27,17 @@
   </div>
 </ng-template>
 
-<input type="text" [(ngModel)]='inpbox'>
+<input type="text" [(ngModel)]="inpbox" />
 
 <!-- <p>{{inpbox}}</p> -->
 
-<div [ngSwitch]='inpbox'>
-  <p *ngSwitchCase='"Ravi"'>Ravi</p>
-  <p *ngSwitchCase='"Pradeep"'>Pradeep</p>
+<div [ngSwitch]="inpbox">
+  <p *ngSwitchCase="'Ravi'">Ravi</p>
+  <p *ngSwitchCase="'Pradeep'">Pradeep</p>
   <p *ngSwitchDefault>Raju</p>
 </div>
 
-<app-child *ngFor='let item of weather' [valueFromParent]='item'></app-child>
+<app-child [valueFromParent]="weather" (valueFromChild)="gdfc($event)">
+</app-child>
+
+<p *ngIf="gdfromc">{{valuefromparent}}</p>

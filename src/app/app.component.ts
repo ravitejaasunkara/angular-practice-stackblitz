@@ -10,5 +10,11 @@ export class AppComponent  {
   data = true;
   isLoggedin = true;
   inpbox = '';
-  weather = ['A','B','C','D'];
+  weather = 'not seems good!';
+  gdfromc = false;
+  valuefromparent = ''
+  gdfc(data){
+    this.valuefromparent = data;
+    this.gdfromc = true;
+  }
 }
