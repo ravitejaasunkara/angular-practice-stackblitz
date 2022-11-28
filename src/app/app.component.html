@@ -36,3 +36,5 @@
   <p *ngSwitchCase='"Pradeep"'>Pradeep</p>
   <p *ngSwitchDefault>Raju</p>
 </div>
+
+<app-child *ngFor='let item of weather' [valueFromParent]='item'></app-child>

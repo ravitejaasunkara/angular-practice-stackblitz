@@ -10,4 +10,5 @@ export class AppComponent  {
   data = true;
   isLoggedin = true;
   inpbox = '';
+  weather = ['A','B','C','D'];
 }
